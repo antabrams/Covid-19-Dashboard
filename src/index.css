@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "leaflet/dist/leaflet.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+}
+
+.covid-card {
+  border: 1px solid;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  background: white;
+  width: 90%;
+  max-width: 900px;
+  gap: 20px;
+}
+
+.dashboard-container,
+.cases-container,
+.deaths-container,
+.recovery-container,
+.search-container,
+.history-container,
+.data-table,
+.world-map {
+  border: 1px solid;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
+  background: white;
+}
+
+.dashboard-container {
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.info-container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.cases-container,
+.deaths-container,
+.recovery-container {
+  padding: 10px;
+  flex: 1;
+  text-align: center;
+}
+
+.search-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-container input {
+  padding: 5px;
+  text-align: center;
+  flex: 1;
+}
+
+.search-container button {
+  padding: 5px 10px;
+  border: none;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+  transition: background 0.2s ease;
+}
+
+.search-container button:hover {
+  background: #0056b3;
+}
+
+.history-container {
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+}
+
+.world-map {
+  padding: 10px;
+  width: 100%;
+}
+
+.data-table {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.data-table p {
+  margin: 5px 0;
+}
